@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    
+    background-image: url(img/agua.jpg);
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   cursor:url(img/cursor.cur),default;
+}
+
+.album {
+    display: flex;
+   flex-wrap: wrap ;
+    justify-content: space-evenly;
+    gap: 2vw;
+    padding: 2vw;
+    
+}
+
+.foto-album img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    c
+}
+
+.foto-album {
+    width: 200px;
+    height: 440px;
+    border: 3.9px solid rgb(18, 17, 19);
+box-shadow: 5px 5px 5px rgb(80, 63, 153);
+flex-grow: 1;
+transition: transform .5s;
+filter: hue-rotate(180deg);
+cursor:url(img/cursor.cur),:default;
+}
+
+.foto-album:hover {
+    transform: scale(1.06);
+    filter: hue-rotate(1deg);
+    cursor:url(img/cursor.cur);
+
+
+}
